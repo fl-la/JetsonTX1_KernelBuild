@@ -66,5 +66,6 @@ done < src/kernel/modules.order
 cd deploy/kernel_modules
 tar -cf kernel_modules.tar *
 cp kernel_modules.tar ../
+tar -cf deploy.tar zImage Image kernel_modules.tar
 cd ..
 rm -rf kernel_modules
